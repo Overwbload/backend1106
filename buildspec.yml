@@ -8,8 +8,7 @@ phases:
       java: corretto11
   pre_build:
     commands:
-      # 登录 ECR
-      - aws ecr get-login-password --region ap-northeast-1 | docker login --username AWS --password-stdin 034362066948.dkr.ecr.ap-northeast-1.amazonaws.com
+      - echo Nothing to di in the pre_build phase...
   build:
     commands:
       - echo Build started on `date`
